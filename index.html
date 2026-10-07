@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SovietStation X — управление X32 и X Air с планшета</title>
+<meta name="description" content="Приложение для Android: управление цифровыми микшерами Behringer X32, X Air и Midas M32, MR по Wi-Fi.">
+<link rel="icon" href="icon.png">
+<style>
+  :root{
+    --bg:#0a0a0a; --panel:#151515; --panel-hi:#1f1f1f; --edge:#2c2c2c;
+    --accent:#00b8d4; --accent-dim:#006374;
+    --text:#ececec; --dim:#9a9a9a; --faint:#6a6a6a;
+    --max:860px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 16px}
+  header{padding:56px 0 40px; text-align:center}
+  header img{width:112px; height:112px; border-radius:24px; display:block; margin:0 auto 20px}
+  h1{margin:0 0 6px; font-size:34px; letter-spacing:.02em}
+  h1 .x{color:var(--accent)}
+  .tag{color:var(--dim); margin:0 0 28px; font-size:17px}
+  .cta{
+    display:inline-block; padding:14px 30px; border-radius:8px;
+    background:var(--accent); color:#04222a; text-decoration:none;
+    font-weight:700; font-size:17px; letter-spacing:.01em;
+  }
+  .cta:hover{background:#2ad0ea}
+  .note{color:var(--faint); font-size:13px; margin-top:12px}
+  section{padding:28px 0; border-top:1px solid var(--edge)}
+  h2{font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin:0 0 16px; font-weight:700}
+  table{width:100%; border-collapse:collapse; font-size:15px}
+  td,th{padding:10px 12px; text-align:left; border-bottom:1px solid var(--edge); vertical-align:top}
+  th{color:var(--dim); font-weight:600; font-size:13px; letter-spacing:.04em; text-transform:uppercase}
+  td:first-child{color:var(--accent); white-space:nowrap; font-weight:600}
+  ul{margin:0; padding-left:20px}
+  li{margin:7px 0}
+  ol{margin:0; padding-left:22px}
+  ol li{margin:10px 0}
+  .cards{display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .card{background:var(--panel); border:1px solid var(--edge); border-radius:8px; padding:16px}
+  .card h3{margin:0 0 6px; font-size:15px; color:var(--text)}
+  .card p{margin:0; color:var(--dim); font-size:14px; line-height:1.5}
+  .muted{color:var(--dim)}
+  code{background:var(--panel-hi); padding:2px 6px; border-radius:4px; font-size:14px}
+  a{color:var(--accent)}
+  footer{padding:32px 0 56px; border-top:1px solid var(--edge); color:var(--faint); font-size:14px}
+  @media (max-width:520px){
+    header{padding:36px 0 28px}
+    h1{font-size:27px}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+  <img src="icon.png" alt="">
+  <h1>SovietStation <span class="x">X</span></h1>
+  <p class="tag">Управление цифровым микшером с планшета.<br>Behringer X32 и X Air, Midas M32 и MR — по Wi-Fi.</p>
+  <a class="cta" href="https://github.com/Agarodt/sovietstation-x/releases/latest">Скачать APK</a>
+  <p class="note">Бесплатно · Android 7.0+ · без аккаунта и без интернета</p>
+</header>
+
+<section>
+  <h2>Какие пульты</h2>
+  <table>
+    <tr><th>Семейство</th><th>Модели</th><th>Связь</th></tr>
+    <tr>
+      <td>X32 · M32</td>
+      <td>X32, Compact, Producer, Rack, Core, M32, M32R, M32C, M32&nbsp;Live</td>
+      <td class="muted">OSC, UDP&nbsp;10023</td>
+    </tr>
+    <tr>
+      <td>X Air · MR</td>
+      <td>XR12, XR16, XR18, X18, MR12, MR16, MR18</td>
+      <td class="muted">OSC, UDP&nbsp;10024</td>
+    </tr>
+  </table>
+  <p class="note">Midas M32 и MR — та же платформа, что X32 и X Air, поэтому работают так же.</p>
+</section>
+
+<section>
+  <h2>Что умеет</h2>
+  <div class="cards">
+    <div class="card"><h3>Микшерный стол</h3><p>Фейдеры, mute, соло, панорама, имена и цвета каналов, DCA, группы мьютов.</p></div>
+    <div class="card"><h3>Канал целиком</h3><p>Преамп, фильтр, гейт, компрессор, четырёхполосный EQ, инсерты, назначения.</p></div>
+    <div class="card"><h3>Посылы</h3><p>По каналу и по шине, включая матрицы. Видно, куда и сколько уходит.</p></div>
+    <div class="card"><h3>Эффекты</h3><p>Тип слота, параметры, уровни посыла и возврата, графический EQ.</p></div>
+    <div class="card"><h3>Анализатор</h3><p>С пульта или с микрофона планшета, со спектрограммой под фейдерами EQ.</p></div>
+    <div class="card"><h3>Сцены</h3><p>Сохранение и загрузка на пульте, плюс локальные снимки состояния.</p></div>
+    <div class="card"><h3>Проигрыватель фонограмм</h3><p>Плеер на компьютере, которым управляют с того же планшета по той же сети.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Установка</h2>
+  <p class="muted">Приложения нет в Google Play, поэтому ставится файлом.</p>
+  <ol>
+    <li>Скачайте APK со страницы <a href="https://github.com/Agarodt/sovietstation-x/releases/latest">релизов</a>.</li>
+    <li>Откройте файл. Android спросит разрешение ставить приложения из этого источника — разрешите.</li>
+    <li>Play Protect может предупредить, что приложение неизвестно. Это значит ровно то, что написано: оно не из магазина. Нажмите «Всё равно установить».</li>
+    <li>Обновление ставится поверх: настройки и сцены сохраняются, удалять старую версию не нужно.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Если приложение закрылось</h2>
+  <p class="muted">
+    Отчёт о сбое пишется сам. Запустите приложение снова — на первом экране будет
+    красная панель «Прошлый запуск завершился сбоем». Нажмите «Отправить отчёт»
+    или просто снимите скриншот и пришлите в
+    <a href="https://github.com/Agarodt/sovietstation-x/issues">Issues</a>.
+  </p>
+  <p class="note">
+    В отчёте только техническая часть: версия Android, место в коде, строка ошибки.
+    Ни настроек, ни имён каналов, ни адресов там нет.
+  </p>
+</section>
+
+<section>
+  <h2>Про данные</h2>
+  <p class="muted">
+    Приложение разговаривает только с пультом в вашей локальной сети и, если вы его
+    включите, с плеером на вашем компьютере. Наружу не уходит ничего: аналитики нет,
+    аккаунтов нет, в интернет оно не ходит вовсе. Микрофон спрашивается только когда
+    вы сами переключаете анализатор на микрофон планшета — звук никуда не пишется
+    и не отправляется.
+  </p>
+</section>
+
+<section>
+  <h2>Честно о состоянии</h2>
+  <p class="muted">
+    Это рабочий инструмент, которым пользуются на концертах, но пишет его один
+    человек, и проверить все модели на живом железе невозможно. Перед первым
+    выступлением прогоните приложение на своём пульте в спокойной обстановке.
+  </p>
+</section>
+
+<footer>
+  SovietStation X · <a href="https://github.com/Agarodt/sovietstation-x/releases">все версии</a> · <a href="https://github.com/Agarodt/sovietstation-x/issues">сообщить о проблеме</a>
+</footer>
+
+</div>
+</body>
+</html>

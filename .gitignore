@@ -1,0 +1,11 @@
+# Сборки сюда не кладут — они живут в Releases.
+*.apk
+*.aab
+
+# Ключ подписи и пароли к нему не должны попасть в репозиторий никогда.
+*.jks
+*.keystore
+keystore.properties
+local.properties
+
+.DS_Store
