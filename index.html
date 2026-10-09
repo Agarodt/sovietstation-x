@@ -47,8 +47,16 @@
   .card h3{margin:0 0 6px; font-size:15px; color:var(--text)}
   .card p{margin:0; color:var(--dim); font-size:14px; line-height:1.5}
   .muted{color:var(--dim)}
-  code{background:var(--panel-hi); padding:2px 6px; border-radius:4px; font-size:14px}
+  code{background:var(--panel-hi); padding:1px 4px; border-radius:3px; font-size:13px}
   a{color:var(--accent)}
+  .dl{
+    display:inline-block; margin-top:12px; padding:9px 18px; border-radius:7px;
+    background:var(--panel-hi); border:1px solid var(--edge); color:var(--accent);
+    text-decoration:none; font-weight:600; font-size:14px;
+  }
+  .dl:hover{background:#262626; border-color:var(--accent-dim)}
+  h4{font-size:14px; color:var(--text); margin:24px 0 8px; font-weight:700}
+  .formats{color:var(--faint); font-size:13px; margin-top:18px}
   footer{padding:32px 0 56px; border-top:1px solid var(--edge); color:var(--faint); font-size:14px}
   @media (max-width:520px){
     header{padding:36px 0 28px}
@@ -108,6 +116,64 @@
     <li>Play Protect может предупредить, что приложение неизвестно. Это значит ровно то, что написано: оно не из магазина. Нажмите «Всё равно установить».</li>
     <li>Обновление ставится поверх: настройки и сцены сохраняются, удалять старую версию не нужно.</li>
   </ol>
+</section>
+
+<section>
+  <h2>Проигрыватель фонограмм</h2>
+  <p class="muted">
+    Отдельная программа для компьютера — плейлист, транспорт, перемотка, громкость.
+    Управляют ею не с компьютера, а с планшета, с того же экрана, где пульт: вкладка
+    «ПЛЕЕР» сама находит компьютер в сети. Удобно, когда ноутбук с фонограммами стоит
+    на сцене, а вы за пультом в зале.
+  </p>
+  <p class="muted">
+    Компьютер и планшет — в одной сети Wi-Fi, той же, где пульт. Ставить ничего не
+    нужно: ни .NET, ни Python, ни кодеков.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Windows 10 / 11</h3>
+      <p>
+        Один файл <code>SovietStationPlayer.exe</code>, 6,6&nbsp;МБ. Двойной щелчок —
+        и всё; можно держать на флешке. Папку с фонограммами достаточно перетащить
+        на значок, она сразу попадёт в плейлист.
+      </p>
+      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/latest">Скачать для Windows</a>
+    </div>
+    <div class="card">
+      <h3>macOS</h3>
+      <p>
+        Архив с приложением <code>SOVIETSTATION.app</code> внутри. Распакуйте и положите в «Программы».
+        Папка с фонограммами выбирается в окне плеера кнопкой «ВЫБРАТЬ ПАПКУ».
+      </p>
+      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/latest">Скачать для macOS</a>
+    </div>
+  </div>
+
+  <h4>Первый запуск · Windows</h4>
+  <p class="muted">
+    <b>SmartScreen</b> скажет «Windows защитила ваш компьютер» — у файла нет платной
+    подписи. «Подробнее» → «Выполнить в любом случае».<br>
+    <b>Брандмауэр</b> спросит, пускать ли плеер в сеть. Разрешите обязательно для
+    частных сетей, а если Windows считает сеть пульта общедоступной — то и для них.
+    Без этого планшет плеер не увидит. Окно закрыли не глядя — запустите
+    <code>firewall.cmd</code> из архива, он откроет нужные порты.
+  </p>
+
+  <h4>Первый запуск · macOS</h4>
+  <p class="muted">
+    Приложение не подписано сертификатом Apple, поэтому macOS откажется его открыть.
+    Привычный приём «правый клик → Открыть» Apple убрала начиная с macOS&nbsp;Sequoia.
+    Сейчас так: попробуйте открыть приложение, получите отказ, затем откройте
+    <b>Системные настройки → Конфиденциальность и безопасность</b>, пролистайте вниз —
+    там появится кнопка <b>«Всё равно открыть»</b>. Подтвердите паролем. Один раз.
+  </p>
+
+  <p class="formats">
+    Форматы: mp3, m4a/aac, wav (включая 24 и 32 бита), flac, alac, wma, aiff.
+    Закрыли окно плеера — плеер остановлен.
+  </p>
 </section>
 
 <section>
