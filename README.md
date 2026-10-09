@@ -66,8 +66,8 @@ M32 и MR — та же платформа, что X32 и X Air, поэтому 
 
 | | Файл | Запуск |
 |---|---|---|
-| **Windows 10/11** | `SovietStationPlayer.exe`, 6,6 МБ | двойной щелчок, можно с флешки |
-| **macOS** | архив с `SOVIETSTATION.app` | распаковать, положить в «Программы» |
+| **Windows 10/11** | архив: `SovietStationPlayer.exe` и `firewall.cmd` | распаковать, двойной щелчок по exe; можно с флешки |
+| **macOS 11+** | архив с `SOVIETSTATION.app` — Apple Silicon и Intel | распаковать, положить в «Программы» |
 
 Оба лежат на странице [релизов](../../releases/latest), рядом с APK.
 
