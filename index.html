@@ -31,6 +31,15 @@
     font-weight:700; font-size:17px; letter-spacing:.01em;
   }
   .cta:hover{background:#2ad0ea}
+  .actions{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+  .donate{
+    display:inline-block; padding:14px 26px; border-radius:8px;
+    border:2px solid #ff8c00; color:#ff8c00; text-decoration:none;
+    font-weight:700; font-size:17px; letter-spacing:.01em;
+  }
+  .donate:hover{background:#ff8c00; color:#1a0e00}
+  .support{background:var(--panel); border:1px solid #5a3200; border-radius:10px; padding:22px; text-align:center}
+  .support p{margin:0 0 16px; color:var(--dim)}
   .note{color:var(--faint); font-size:13px; margin-top:12px}
   section{padding:28px 0; border-top:1px solid var(--edge)}
   h2{font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin:0 0 16px; font-weight:700}
@@ -72,7 +81,10 @@
   <img src="icon.png" alt="">
   <h1>SovietStation <span class="x">X</span></h1>
   <p class="tag">Управление цифровым микшером с планшета.<br>Behringer X32 и X Air, Midas M32 и MR — по Wi-Fi.</p>
-  <a class="cta" href="https://github.com/Agarodt/sovietstation-x/releases/latest">Скачать APK</a>
+  <div class="actions">
+    <a class="cta" href="https://github.com/Agarodt/sovietstation-x/releases/latest">Скачать APK</a>
+    <a class="donate" href="https://pay.cloudtips.ru/p/7edfaa87" target="_blank" rel="noopener">♥ Поддержать проект</a>
+  </div>
   <p class="note">Бесплатно · Android 7.0+ · без аккаунта и без интернета</p>
 </header>
 
@@ -211,8 +223,20 @@
   </p>
 </section>
 
+<section>
+  <h2>Поддержать проект</h2>
+  <div class="support">
+    <p>
+      SovietStation бесплатна и останется такой. Если приложение выручило вас на
+      концерте или в студии, можно поддержать разработку — это помогает покупать
+      пульты для проверки и находить время на новые функции.
+    </p>
+    <a class="donate" href="https://pay.cloudtips.ru/p/7edfaa87" target="_blank" rel="noopener">♥ Поддержать через CloudTips</a>
+  </div>
+</section>
+
 <footer>
-  SovietStation X · <a href="https://github.com/Agarodt/sovietstation-x/releases">все версии</a> · <a href="https://github.com/Agarodt/sovietstation-x/issues">сообщить о проблеме</a>
+  SovietStation X · <a href="https://pay.cloudtips.ru/p/7edfaa87">поддержать</a> · <a href="https://github.com/Agarodt/sovietstation-x/releases">все версии</a> · <a href="https://github.com/Agarodt/sovietstation-x/issues">сообщить о проблеме</a>
 </footer>
 
 </div>
