@@ -4,7 +4,7 @@
 
 Управление цифровыми микшерами Behringer X32 и X Air, Midas M32 и MR и Allen & Heath Qu Classic с Android по локальной сети.
 
-**[Скачать XQ 1.6 для Android](https://github.com/Agarodt/sovietstation-x/releases/download/1.6/SovietStation-XQ-1.6.apk)** &nbsp;·&nbsp; **[Страница приложения](https://agarodt.github.io/sovietstation-x/)** &nbsp;·&nbsp; **[♥ Поддержать проект](https://pay.cloudtips.ru/p/7edfaa87)**
+**[Загрузки, плееры и инструкция](https://agarodt.github.io/sovietstation-x/)** &nbsp;·&nbsp; [Скачать APK XQ 1.6](https://github.com/Agarodt/sovietstation-x/releases/download/1.6/SovietStation-XQ-1.6.apk) &nbsp;·&nbsp; **[♥ Поддержать проект](https://pay.cloudtips.ru/p/7edfaa87)**
 
 ---
 
