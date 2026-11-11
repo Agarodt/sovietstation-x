@@ -1,11 +1,10 @@
-<img src="icon.png" width="128" align="right" alt="SovietStation X">
+<img src="icon.png" width="128" align="right" alt="SovietStation XQ">
 
-# SovietStation X
+# SovietStation XQ
 
-Управление цифровым микшером с планшета. Behringer X32 и X Air, Midas M32 и MR —
-по Wi-Fi, без облаков и без регистрации.
+Управление цифровыми микшерами Behringer X32 и X Air, Midas M32 и MR и Allen & Heath Qu Classic с Android по локальной сети.
 
-**[Скачать последнюю версию →](../../releases/latest)** &nbsp;·&nbsp; **[♥ Поддержать проект](https://pay.cloudtips.ru/p/7edfaa87)**
+**[Скачать XQ 1.6 для Android](https://github.com/Agarodt/sovietstation-x/releases/download/1.6/SovietStation-XQ-1.6.apk)** &nbsp;·&nbsp; **[Страница приложения](https://agarodt.github.io/sovietstation-x/)** &nbsp;·&nbsp; **[♥ Поддержать проект](https://pay.cloudtips.ru/p/7edfaa87)**
 
 ---
 
@@ -15,8 +14,11 @@
 |---|---|---|
 | Behringer X32 · Midas M32 | X32, Compact, Producer, Rack, Core, M32, M32R, M32C, M32 Live | OSC, UDP 10023 |
 | Behringer X Air · Midas MR | XR12, XR16, XR18, X18, MR12, MR16, MR18 | OSC, UDP 10024 |
+| Allen & Heath Qu Classic | Qu-16, Qu-24, Qu-32, Qu-Pac, Qu-SB | TCP 51325 / 51326 |
 
-M32 и MR — та же платформа, что X32 и X Air, поэтому работают так же.
+M32 и MR используют ту же платформу, что X32 и X Air.
+
+На Qu-16 USB-патч проверен в обе стороны. Qu-24 показывает USB, dSNAKE, Direct Out и маршруты FX. Поддержка функций Qu зависит от модели.
 
 ## Что умеет
 
@@ -43,16 +45,12 @@ M32 и MR — та же платформа, что X32 и X Air, поэтому 
 
 Приложения нет в Google Play, поэтому ставится файлом.
 
-1. Скачайте `SovietStation-X-<версия>.apk` со страницы
-   [релизов](../../releases/latest).
+1. Скачайте [SovietStation-XQ-1.6.apk](https://github.com/Agarodt/sovietstation-x/releases/download/1.6/SovietStation-XQ-1.6.apk).
 2. Откройте файл. Android спросит разрешение ставить приложения из этого
    источника (браузера или файлового менеджера) — разрешите.
-3. Play Protect может предупредить, что приложение неизвестно. Это значит ровно
-   то, что написано: оно не из магазина. Нажмите «Всё равно установить».
-4. Готово. Иконка появится в списке программ.
+3. Откройте SovietStation XQ из списка приложений.
 
-Обновление ставится поверх, настройки и сцены сохраняются. Удалять старую
-версию не нужно и не стоит.
+Установите XQ поверх SovietStation X, чтобы сохранить настройки и сцены.
 
 ## Проигрыватель фонограмм
 
@@ -69,7 +67,7 @@ M32 и MR — та же платформа, что X32 и X Air, поэтому 
 | **Windows 10/11** | архив: `SovietStationPlayer.exe` и `firewall.cmd` | распаковать, двойной щелчок по exe; можно с флешки |
 | **macOS 11+** | архив с `SOVIETSTATION.app` — Apple Silicon и Intel | распаковать, положить в «Программы» |
 
-Оба лежат на странице [релизов](../../releases/latest), рядом с APK.
+[Windows](https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.5-win.zip) · [macOS](https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.5-mac.zip) · [Плеер для Android](https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.0-android.apk)
 
 Форматы: mp3, m4a/aac, wav (включая 24 и 32 бита), flac, alac, wma, aiff.
 Плейлист, громкость и режимы сохраняются между запусками. Закрыли окно плеера —
@@ -141,8 +139,7 @@ Sequoia. Сейчас порядок такой:
 человек, и проверить все модели на живом железе невозможно. Перед первым
 выступлением прогоните приложение на своём пульте в спокойной обстановке.
 
-Есть и полная редакция — с Behringer WING, Allen & Heath Qu и CQ, Yamaha CL.
-Там поддержка разной зрелости, поэтому она раздаётся отдельно.
+Полная редакция дополнительно включает Behringer WING, Allen & Heath CQ и Yamaha CL.
 
 ## Поддержать проект
 

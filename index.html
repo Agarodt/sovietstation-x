@@ -3,26 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SovietStation X — управление X32 и X Air с планшета</title>
-<meta name="description" content="Приложение для Android: управление цифровыми микшерами Behringer X32, X Air и Midas M32, MR по Wi-Fi.">
+<title>SovietStation XQ — управление X32, X Air и Qu с планшета</title>
+<meta name="description" content="Управление микшерами Behringer X32 и X Air, Midas M32 и MR, Allen &amp; Heath Qu Classic с Android по локальной сети.">
 <link rel="icon" href="icon.png">
 <style>
   :root{
-    --bg:#0a0a0a; --panel:#151515; --panel-hi:#1f1f1f; --edge:#2c2c2c;
-    --accent:#00b8d4; --accent-dim:#006374;
-    --text:#ececec; --dim:#9a9a9a; --faint:#6a6a6a;
+    --bg:#081314; --panel:#102022; --panel-hi:#172d2e; --edge:#284344;
+    --accent:#2dd4bf; --accent-dim:#397e75;
+    --text:#edf7f5; --dim:#aec7c3; --faint:#8da6a3;
     --max:860px;
   }
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
   body{
-    margin:0; background:var(--bg); color:var(--text);
+    margin:0; background:radial-gradient(ellipse 720px 430px at 50% 0, #103c36, transparent), var(--bg); color:var(--text);
     font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
   .wrap{max-width:var(--max); margin:0 auto; padding:0 16px}
-  header{padding:56px 0 40px; text-align:center}
-  header img{width:112px; height:112px; border-radius:24px; display:block; margin:0 auto 20px}
-  h1{margin:0 0 6px; font-size:34px; letter-spacing:.02em}
+  header{padding:64px 0 44px; text-align:center}
+  header img{width:128px; height:128px; display:block; margin:0 auto 18px}
+  h1{margin:0 0 6px; font-size:clamp(30px, 7vw, 58px); line-height:1.12; letter-spacing:-.035em}
   h1 .x{color:var(--accent)}
   .tag{color:var(--dim); margin:0 0 28px; font-size:17px}
   .cta{
@@ -30,15 +30,17 @@
     background:var(--accent); color:#04222a; text-decoration:none;
     font-weight:700; font-size:17px; letter-spacing:.01em;
   }
-  .cta:hover{background:#2ad0ea}
+  .cta:hover{background:#5eead4}
+  a:focus-visible{outline:2px solid #99f6e4; outline-offset:4px}
+  .table-scroll{overflow-x:auto}
   .actions{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
   .donate{
     display:inline-block; padding:14px 26px; border-radius:8px;
-    border:2px solid #ff8c00; color:#ff8c00; text-decoration:none;
+    border:1px solid var(--accent-dim); color:var(--accent); text-decoration:none;
     font-weight:700; font-size:17px; letter-spacing:.01em;
   }
-  .donate:hover{background:#ff8c00; color:#1a0e00}
-  .support{background:var(--panel); border:1px solid #5a3200; border-radius:10px; padding:22px; text-align:center}
+  .donate:hover{background:var(--panel-hi)}
+  .support{background:var(--panel); border:1px solid var(--edge); border-radius:10px; padding:22px; text-align:center}
   .support p{margin:0 0 16px; color:var(--dim)}
   .note{color:var(--faint); font-size:13px; margin-top:12px}
   section{padding:28px 0; border-top:1px solid var(--edge)}
@@ -63,13 +65,14 @@
     background:var(--panel-hi); border:1px solid var(--edge); color:var(--accent);
     text-decoration:none; font-weight:600; font-size:14px;
   }
-  .dl:hover{background:#262626; border-color:var(--accent-dim)}
+  .dl:hover{background:var(--panel); border-color:var(--accent)}
   h4{font-size:14px; color:var(--text); margin:24px 0 8px; font-weight:700}
   .formats{color:var(--faint); font-size:13px; margin-top:18px}
   footer{padding:32px 0 56px; border-top:1px solid var(--edge); color:var(--faint); font-size:14px}
   @media (max-width:520px){
     header{padding:36px 0 28px}
-    h1{font-size:27px}
+    td,th{padding:8px 6px}
+    td:first-child{white-space:normal}
   }
 </style>
 </head>
@@ -79,17 +82,18 @@
 
 <header>
   <img src="icon.png" alt="">
-  <h1>SovietStation <span class="x">X</span></h1>
-  <p class="tag">Управление цифровым микшером с планшета.<br>Behringer X32 и X Air, Midas M32 и MR — по Wi-Fi.</p>
+  <h1>SovietStation <span class="x">XQ</span></h1>
+  <p class="tag">Управление цифровым микшером с планшета.<br>Behringer X32 и X Air, Midas M32 и MR, Allen &amp; Heath Qu Classic.</p>
   <div class="actions">
-    <a class="cta" href="https://github.com/Agarodt/sovietstation-x/releases/latest">Скачать APK</a>
+    <a class="cta" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.6/SovietStation-XQ-1.6.apk">Скачать XQ 1.6 для Android</a>
     <a class="donate" href="https://pay.cloudtips.ru/p/7edfaa87" target="_blank" rel="noopener">♥ Поддержать проект</a>
   </div>
-  <p class="note">Бесплатно · Android 7.0+ · без аккаунта и без интернета</p>
+  <p class="note">Бесплатно · Android 7.0+ · управление по локальной сети</p>
 </header>
 
 <section>
   <h2>Какие пульты</h2>
+  <div class="table-scroll">
   <table>
     <tr><th>Семейство</th><th>Модели</th><th>Связь</th></tr>
     <tr>
@@ -102,8 +106,14 @@
       <td>XR12, XR16, XR18, X18, MR12, MR16, MR18</td>
       <td class="muted">OSC, UDP&nbsp;10024</td>
     </tr>
+    <tr>
+      <td>Qu Classic</td>
+      <td>Qu-16, Qu-24, Qu-32, Qu-Pac, Qu-SB</td>
+      <td class="muted">TCP&nbsp;51325 / 51326</td>
+    </tr>
   </table>
-  <p class="note">Midas M32 и MR — та же платформа, что X32 и X Air, поэтому работают так же.</p>
+  </div>
+  <p class="note">Возможности Qu зависят от модели. Патч USB на Qu-16 проверен на пульте. Qu-24 показывает патч USB, dSNAKE, Direct Out и маршруты FX.</p>
 </section>
 
 <section>
@@ -113,20 +123,25 @@
     <div class="card"><h3>Канал целиком</h3><p>Преамп, фильтр, гейт, компрессор, четырёхполосный EQ, инсерты, назначения.</p></div>
     <div class="card"><h3>Посылы</h3><p>По каналу и по шине, включая матрицы. Видно, куда и сколько уходит.</p></div>
     <div class="card"><h3>Эффекты</h3><p>Тип слота, параметры, уровни посыла и возврата, графический EQ.</p></div>
-    <div class="card"><h3>Анализатор</h3><p>С пульта или с микрофона планшета, со спектрограммой под фейдерами EQ.</p></div>
+    <div class="card"><h3>Анализатор</h3><p>С пульта или с микрофона планшета. График и спектрограмма доступны в EQ.</p></div>
     <div class="card"><h3>Сцены</h3><p>Сохранение и загрузка на пульте, плюс локальные снимки состояния.</p></div>
     <div class="card"><h3>Проигрыватель фонограмм</h3><p>Плеер на компьютере, которым управляют с того же планшета по той же сети.</p></div>
   </div>
 </section>
 
 <section>
+  <h2>Что нового в XQ</h2>
+  <p>В XQ появился Qu Classic с управлением каналами и посылами, EQ, динамикой, сценами и FX. Профили Qu доступны и в режиме «Без пульта». На Qu-16 доступны стереолинк, USB-патч и CH/ST Source.</p>
+  <p><a href="https://github.com/Agarodt/sovietstation-x/releases/tag/1.6">Описание версии 1.6</a></p>
+</section>
+
+<section>
   <h2>Установка</h2>
   <p class="muted">Приложения нет в Google Play, поэтому ставится файлом.</p>
   <ol>
-    <li>Скачайте APK со страницы <a href="https://github.com/Agarodt/sovietstation-x/releases/latest">релизов</a>.</li>
+    <li>Скачайте <a href="https://github.com/Agarodt/sovietstation-x/releases/download/1.6/SovietStation-XQ-1.6.apk">SovietStation-XQ-1.6.apk</a>.</li>
     <li>Откройте файл. Android спросит разрешение ставить приложения из этого источника — разрешите.</li>
-    <li>Play Protect может предупредить, что приложение неизвестно. Это значит ровно то, что написано: оно не из магазина. Нажмите «Всё равно установить».</li>
-    <li>Обновление ставится поверх: настройки и сцены сохраняются, удалять старую версию не нужно.</li>
+    <li>Установите XQ поверх SovietStation X. Android сохранит настройки и сцены.</li>
   </ol>
 </section>
 
@@ -151,7 +166,7 @@
         Распакуйте куда угодно, хоть на флешку, — двойной щелчок по exe, и всё. Папку с фонограммами достаточно перетащить
         на значок, она сразу попадёт в плейлист.
       </p>
-      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/latest">Скачать для Windows</a>
+      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.5-win.zip">Скачать для Windows</a>
     </div>
     <div class="card">
       <h3>macOS</h3>
@@ -160,7 +175,12 @@
         macOS&nbsp;11 и новее, Apple Silicon и Intel.
         Папка с фонограммами выбирается в окне плеера кнопкой «ВЫБРАТЬ ПАПКУ».
       </p>
-      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/latest">Скачать для macOS</a>
+      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.5-mac.zip">Скачать для macOS</a>
+    </div>
+    <div class="card">
+      <h3>Android</h3>
+      <p>Отдельный плеер для фонограмм на телефоне или планшете.</p>
+      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.0-android.apk">Скачать плеер для Android</a>
     </div>
   </div>
 
@@ -236,7 +256,7 @@
 </section>
 
 <footer>
-  SovietStation X · <a href="https://pay.cloudtips.ru/p/7edfaa87">поддержать</a> · <a href="https://github.com/Agarodt/sovietstation-x/releases">все версии</a> · <a href="https://github.com/Agarodt/sovietstation-x/issues">сообщить о проблеме</a>
+  SovietStation XQ · <a href="https://pay.cloudtips.ru/p/7edfaa87">поддержать</a> · <a href="https://github.com/Agarodt/sovietstation-x/releases">все версии</a> · <a href="https://github.com/Agarodt/sovietstation-x/issues">сообщить о проблеме</a>
 </footer>
 
 </div>
