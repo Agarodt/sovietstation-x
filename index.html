@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SovietStation XQ — управление X32, X Air и Qu с планшета</title>
 <meta name="description" content="Управление микшерами Behringer X32 и X Air, Midas M32 и MR, Allen &amp; Heath Qu Classic с Android по локальной сети.">
-<link rel="icon" href="icon.png">
+<link rel="icon" href="icon.png?v=xq-r2">
 <style>
   :root{
     --bg:#081314; --panel:#102022; --panel-hi:#172d2e; --edge:#284344;
@@ -21,9 +21,8 @@
   }
   .wrap{max-width:var(--max); margin:0 auto; padding:0 16px}
   header{padding:64px 0 44px; text-align:center}
-  header img{width:128px; height:128px; display:block; margin:0 auto 18px}
-  h1{margin:0 0 6px; font-size:clamp(30px, 7vw, 58px); line-height:1.12; letter-spacing:-.035em}
-  h1 .x{color:var(--accent)}
+  h1{margin:0 0 18px}
+  .hero-art{display:block; width:min(100%, 360px); height:auto; margin:0 auto; border-radius:10px}
   .tag{color:var(--dim); margin:0 0 28px; font-size:17px}
   .cta{
     display:inline-block; padding:14px 30px; border-radius:8px;
@@ -81,11 +80,10 @@
 <div class="wrap">
 
 <header>
-  <img src="icon.png" alt="">
-  <h1>SovietStation <span class="x">XQ</span></h1>
+  <h1><img class="hero-art" src="sovietstation_xq_art.jpg" width="1152" height="768" alt="SovietStation XQ"></h1>
   <p class="tag">Управление цифровым микшером с планшета.<br>Behringer X32 и X Air, Midas M32 и MR, Allen &amp; Heath Qu Classic.</p>
   <div class="actions">
-    <a class="cta" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.6/SovietStation-XQ-1.6.apk">Скачать XQ 1.6 для Android</a>
+    <a class="cta" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.6/SovietStation-XQ-1.6-r2.apk">Скачать XQ 1.6 для Android</a>
     <a class="donate" href="https://pay.cloudtips.ru/p/7edfaa87" target="_blank" rel="noopener">♥ Поддержать проект</a>
   </div>
   <nav class="actions" aria-label="Загрузки и инструкция">
@@ -143,7 +141,7 @@
   <h2>Установка</h2>
   <p class="muted">Приложения нет в Google Play, поэтому ставится файлом.</p>
   <ol>
-    <li>Скачайте <a href="https://github.com/Agarodt/sovietstation-x/releases/download/1.6/SovietStation-XQ-1.6.apk">SovietStation-XQ-1.6.apk</a>.</li>
+    <li>Скачайте <a href="https://github.com/Agarodt/sovietstation-x/releases/download/1.6/SovietStation-XQ-1.6-r2.apk">SovietStation-XQ-1.6-r2.apk</a>.</li>
     <li>Откройте файл. Android спросит разрешение ставить приложения из этого источника — разрешите.</li>
     <li>Установите XQ поверх SovietStation X. Android сохранит настройки и сцены.</li>
   </ol>
