@@ -150,14 +150,14 @@
 <section id="players">
   <h2>Проигрыватель фонограмм</h2>
   <p class="muted">
-    Отдельная программа для компьютера — плейлист, транспорт, перемотка, громкость.
-    Управляют ею не с компьютера, а с планшета, с того же экрана, где пульт: вкладка
-    «ПЛЕЕР» сама находит компьютер в сети. Удобно, когда ноутбук с фонограммами стоит
+    Отдельный плеер для компьютера, телефона или планшета — плейлист, транспорт, перемотка, громкость.
+    Управлять им можно из SovietStation с того же экрана, где пульт: вкладка
+    «ПЛЕЕР» находит устройство с плеером в сети. Удобно, когда ноутбук с фонограммами стоит
     на сцене, а вы за пультом в зале.
   </p>
   <p class="muted">
-    Компьютер и планшет — в одной сети Wi-Fi, той же, где пульт. Ставить ничего не
-    нужно: ни .NET, ни Python, ни кодеков.
+    Устройство с плеером и SovietStation должны быть в одной локальной сети.
+    Подойдёт та же сеть, к которой подключён пульт; отдельная сеть и интернет не нужны.
   </p>
 
   <div class="cards">
@@ -168,7 +168,7 @@
         Распакуйте куда угодно, хоть на флешку, — двойной щелчок по exe, и всё. Папку с фонограммами достаточно перетащить
         на значок, она сразу попадёт в плейлист.
       </p>
-      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.6-win.zip">Скачать для Windows</a>
+      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.7-win.zip">Скачать для Windows</a>
     </div>
     <div class="card">
       <h3>macOS</h3>
@@ -177,14 +177,20 @@
         macOS&nbsp;11 и новее, Apple Silicon и Intel.
         Папка с фонограммами выбирается в окне плеера кнопкой «ВЫБРАТЬ ПАПКУ».
       </p>
-      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.6-mac.zip">Скачать для macOS</a>
+      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.7-mac.zip">Скачать для macOS</a>
     </div>
     <div class="card">
       <h3>Android</h3>
       <p>Отдельный плеер для фонограмм на телефоне или планшете.</p>
-      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationAndroidPlayer-1.6.apk">Скачать плеер для Android</a>
+      <a class="dl" href="https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.7-android.apk">Скачать плеер для Android</a>
     </div>
   </div>
+
+  <p class="muted">В плеерах 1.7 появился <b>кроссфейд</b>: предыдущий трек плавно затихает,
+    следующий одновременно набирает громкость за 0,6 секунды. Работает при ручном переключении
+    и автоматически в режиме «После: следующий». Кнопка «Кроссфейд» включена по умолчанию; выбор сохраняется.</p>
+  <p class="muted">Соедините аудиовыход устройства с плеером с входом пульта или акустикой.
+    По Wi-Fi передаются команды управления; музыку воспроизводит устройство с плеером.</p>
 
   <h4>Первый запуск · Windows</h4>
   <p class="muted">
