@@ -67,7 +67,7 @@ M32 и MR используют ту же платформу, что X32 и X Air
 | **Windows 10/11** | архив: `SovietStationPlayer.exe` и `firewall.cmd` | распаковать, двойной щелчок по exe; можно с флешки |
 | **macOS 11+** | архив с `SOVIETSTATION.app` — Apple Silicon и Intel | распаковать, положить в «Программы» |
 
-[Windows](https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.6-win.zip) · [macOS](https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.6-mac.zip) · [Плеер для Android](https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationAndroidPlayer-1.6.apk)
+[Windows](https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.8-win.zip) · [macOS](https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.8-mac.zip) · [Плеер для Android](https://github.com/Agarodt/sovietstation-x/releases/download/1.5/SovietStationPlayer-1.8-android.apk)
 
 Форматы: mp3, m4a/aac, wav (включая 24 и 32 бита), flac, alac, wma, aiff.
 Плейлист, громкость и режимы сохраняются между запусками. Закрыли окно плеера —
